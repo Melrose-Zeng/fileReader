@@ -1,0 +1,8 @@
+html,body,div,p,span{
+  padding: 0;
+  margin: 0;
+}
+.elImg{
+  position: absolute !important;
+  height: 100%;
+}
