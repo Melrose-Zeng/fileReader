@@ -1,5 +1,5 @@
 <template>
-  <imageBox>
+  <div class="imgbox">
     <el-image fit="fill" class="elImg" :src="p1" alt="" />
     <template v-if="props.show">
       <el-image fit="fill" class="elImg a1 animate__animated animate__fadeInDown" :src="p2" alt="" />
@@ -10,10 +10,9 @@
       <el-image fit="fill" class="elImg a6 animate__animated animate__fadeInRight d2" :src="p7" alt="" />
       <el-image fit="fill" class="elImg a7 animate__animated animate__fadeInRight d2" :src="p8" alt="" />
     </template>
-  </imageBox>
+  </div>
 </template>
 <script setup>
-import imageBox from '../imageBox.vue';
 import p1 from '@/assets/picture/2/1.png'
 import p2 from '@/assets/picture/2/2.png'
 import p3 from '@/assets/picture/2/3.png'
