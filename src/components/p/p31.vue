@@ -1,18 +1,14 @@
 <template>
   <div class="imgbox">
-    <el-image fit="fill" class="elImg" :src="p1" alt="" />
+    <img class="elImg" src="@/assets/picture/31/1.jpg" alt="" />
     <template v-if="props.show">
-      <el-image fit="fill" class="elImg fadeInUp a1" :src="p3" alt="" />
-      <el-image fit="fill" class="elImg animate__animated animate__fadeInRight a2" :src="p4" alt="" />
-      <el-image fit="fill" class="elImg fadeInUp a3" :src="p2" alt="" />
+      <img class="elImg fadeInUp a1" src="@/assets/picture/31/3.png" alt="" />
+      <img class="elImg animate__animated animate__fadeInRight a2" src="@/assets/picture/31/4.png" alt="" />
+      <img class="elImg fadeInUp a3" src="@/assets/picture/31/2.png" alt="" />
     </template>
   </div>
 </template>
 <script setup>
-import p1 from '@/assets/picture/31/1.png'
-import p2 from '@/assets/picture/31/2.png'
-import p3 from '@/assets/picture/31/3.png'
-import p4 from '@/assets/picture/31/4.png'
 const props = defineProps({
   show:false
 })

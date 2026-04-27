@@ -9,6 +9,7 @@ import 'swiper/css'
 import 'animate.css';
 // 2. 导入 VueAwesomeSwiper 插件
 import VueAwesomeSwiper from 'vue-awesome-swiper'
+
 const app = createApp(App)
 app.use(router)
 app.use(ElementPlus)

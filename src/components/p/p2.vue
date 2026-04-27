@@ -1,26 +1,18 @@
 <template>
   <div class="imgbox">
-    <el-image fit="fill" class="elImg" :src="p1" alt="" />
+    <img class="elImg" src="@/assets/picture/2/1.jpg" alt="" />
     <template v-if="props.show">
-      <el-image fit="fill" class="elImg a1 animate__animated animate__fadeInDown" :src="p2" alt="" />
-      <el-image fit="fill" class="elImg a2 animate__animated animate__fadeInRight d2" :src="p3" alt="" />
-      <el-image fit="fill" class="elImg a3 animate__animated animate__fadeInRight d2" :src="p4" alt="" />
-      <el-image fit="fill" class="elImg a4 animate__animated animate__fadeInRight d2" :src="p5" alt="" />
-      <el-image fit="fill" class="elImg a5 animate__animated animate__fadeInRight d2" :src="p6" alt="" />
-      <el-image fit="fill" class="elImg a6 animate__animated animate__fadeInRight d2" :src="p7" alt="" />
-      <el-image fit="fill" class="elImg a7 animate__animated animate__fadeInRight d2" :src="p8" alt="" />
+      <img class="elImg a1 animate__animated animate__fadeInDown" src="@/assets/picture/2/2.png" alt="" />
+      <img class="elImg a2 animate__animated animate__fadeInRight d2" src="@/assets/picture/2/3.png" alt="" />
+      <img class="elImg a3 animate__animated animate__fadeInRight d2" src="@/assets/picture/2/4.png" alt="" />
+      <img class="elImg a4 animate__animated animate__fadeInRight d2" src="@/assets/picture/2/5.png" alt="" />
+      <img class="elImg a5 animate__animated animate__fadeInRight d2" src="@/assets/picture/2/6.png" alt="" />
+      <img class="elImg a6 animate__animated animate__fadeInRight d2" src="@/assets/picture/2/7.png" alt="" />
+      <img class="elImg a7 animate__animated animate__fadeInRight d2" src="@/assets/picture/2/8.png" alt="" />
     </template>
   </div>
 </template>
 <script setup>
-import p1 from '@/assets/picture/2/1.png'
-import p2 from '@/assets/picture/2/2.png'
-import p3 from '@/assets/picture/2/3.png'
-import p4 from '@/assets/picture/2/4.png'
-import p5 from '@/assets/picture/2/5.png'
-import p6 from '@/assets/picture/2/6.png'
-import p7 from '@/assets/picture/2/7.png'
-import p8 from '@/assets/picture/2/8.png'
 const props = defineProps({
   show:false
 })

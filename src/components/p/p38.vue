@@ -1,41 +1,27 @@
 <template>
   <div class="imgbox">
-    <el-image fit="fill" class="elImg" :src="p1" alt="" />
+    <img  class="elImg" src="@/assets/picture/38/1.jpg" alt="" />
     <template v-if="props.show">
-      <el-image fit="fill" class="elImg fadeInUp a1" :src="p2" alt="" />
-      <el-image fit="fill" class="elImg fadeInUp a1" :src="p3" alt="" />
-      <el-image fit="fill" class="elImg animate__animated animate__fadeInLeft a2" :src="p4" alt="" />
-      <el-image fit="fill" class="elImg animate__animated animate__fadeIn a3" :src="p5" alt="" />
-      <el-image fit="fill" class="elImg animate__animated animate__fadeIn a4" :src="p10" alt="" />
-      <el-image fit="fill" class="elImg animate__animated animate__fadeIn a4" :src="p13" alt="" />
-      <el-image fit="fill" class="elImg animate__animated animate__fadeInLeft a5" :src="p6" alt="" />
-      <el-image fit="fill" class="elImg animate__animated animate__fadeIn a6" :src="p7" alt="" />
-      <el-image fit="fill" class="elImg animate__animated animate__fadeIn a7" :src="p11" alt="" />
-      <el-image fit="fill" class="elImg animate__animated animate__fadeIn a7" :src="p14" alt="" />
-      <el-image fit="fill" class="elImg animate__animated animate__fadeInRight a8" :src="p8" alt="" />
-      <el-image fit="fill" class="elImg animate__animated animate__fadeIn a9" :src="p9" alt="" />
-      <el-image fit="fill" class="elImg animate__animated animate__fadeIn a10" :src="p12" alt="" />
-      <el-image fit="fill" class="elImg animate__animated animate__fadeIn a10" :src="p15" alt="" />
+      <img  class="elImg fadeInUp a1" src="@/assets/picture/38/2.png" alt="" />
+      <img  class="elImg fadeInUp a1" src="@/assets/picture/38/3.png" alt="" />
+      <img  class="elImg animate__animated animate__fadeInLeft a2" src="@/assets/picture/38/4.png" alt="" />
+      <img  class="elImg animate__animated animate__fadeIn a3" src="@/assets/picture/38/5.png" alt="" />
+      <img  class="elImg animate__animated animate__fadeIn a4" src="@/assets/picture/38/10.png" alt="" />
+      <img  class="elImg animate__animated animate__fadeIn a4" src="@/assets/picture/38/13.png" alt="" />
+      <img  class="elImg animate__animated animate__fadeInLeft a5" src="@/assets/picture/38/6.png" alt="" />
+      <img  class="elImg animate__animated animate__fadeIn a6" src="@/assets/picture/38/7.png" alt="" />
+      <img  class="elImg animate__animated animate__fadeIn a7" src="@/assets/picture/38/11.png" alt="" />
+      <img  class="elImg animate__animated animate__fadeIn a7" src="@/assets/picture/38/14.png" alt="" />
+      <img  class="elImg animate__animated animate__fadeInRight a8" src="@/assets/picture/38/8.png" alt="" />
+      <img  class="elImg animate__animated animate__fadeIn a9" src="@/assets/picture/38/9.png" alt="" />
+      <img  class="elImg animate__animated animate__fadeIn a10" src="@/assets/picture/38/12.png" alt="" />
+      <img  class="elImg animate__animated animate__fadeIn a10" src="@/assets/picture/38/15.png" alt="" />
 
     </template>
   </div>
 </template>
 <script setup>
-import p1 from '@/assets/picture/38/1.png'
-import p2 from '@/assets/picture/38/2.png'
-import p3 from '@/assets/picture/38/3.png'
-import p4 from '@/assets/picture/38/4.png'
-import p5 from '@/assets/picture/38/5.png'
-import p6 from '@/assets/picture/38/6.png'
-import p7 from '@/assets/picture/38/7.png'
-import p8 from '@/assets/picture/38/8.png'
-import p9 from '@/assets/picture/38/9.png'
-import p10 from '@/assets/picture/38/10.png'
-import p11 from '@/assets/picture/38/11.png'
-import p12 from '@/assets/picture/38/12.png'
-import p13 from '@/assets/picture/38/13.png'
-import p14 from '@/assets/picture/38/14.png'
-import p15 from '@/assets/picture/38/15.png'
+
 const props = defineProps({
   show:false
 })

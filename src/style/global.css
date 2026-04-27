@@ -5,6 +5,8 @@ html,body,div,p,span{
 .elImg{
   position: absolute !important;
   height: 100%;
+  width: 100%;
+  object-fit:fill;
 }
 .imgbox{
   width: 100%;

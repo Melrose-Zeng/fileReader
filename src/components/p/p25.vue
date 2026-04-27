@@ -1,31 +1,21 @@
 <template>
   <div class="imgbox">
-    <el-image fit="fill" class="elImg" :src="p1" alt="" />
+    <img class="elImg" src="@/assets/picture/25/1.jpg" alt="" />
     <template v-if="props.show">
-      <el-image fit="fill" class="elImg fadeInUp a1" :src="p2" alt="" />
-      <el-image fit="fill" class="elImg fadeInUp a1" :src="p3" alt="" />
-      <el-image fit="fill" class="elImg fadeInUp a1" :src="p4" alt="" />
-      <el-image fit="fill" class="elImg fadeInUp a1" :src="p5" alt="" />
-      <el-image fit="fill" class="elImg fadeInUp a1" :src="p6" alt="" />
-      <el-image fit="fill" class="elImg animate__animated animate__fadeIn a2" :src="p7" alt="" />
-      <el-image fit="fill" class="elImg animate__animated animate__fadeIn a2" :src="p8" alt="" />
-      <el-image fit="fill" class="elImg animate__animated animate__fadeIn a2" :src="p9" alt="" />
-      <el-image fit="fill" class="elImg animate__animated animate__fadeIn a2" :src="p10" alt="" />
+      <img class="elImg fadeInUp a1" src="@/assets/picture/25/2.png" alt="" />
+      <img class="elImg fadeInUp a1" src="@/assets/picture/25/3.png" alt="" />
+      <img class="elImg fadeInUp a1" src="@/assets/picture/25/4.png" alt="" />
+      <img class="elImg fadeInUp a1" src="@/assets/picture/25/5.png" alt="" />
+      <img class="elImg fadeInUp a1" src="@/assets/picture/25/6.png" alt="" />
+      <img class="elImg animate__animated animate__fadeIn a2" src="@/assets/picture/25/7.png" alt="" />
+      <img class="elImg animate__animated animate__fadeIn a2" src="@/assets/picture/25/8.png" alt="" />
+      <img class="elImg animate__animated animate__fadeIn a2" src="@/assets/picture/25/9.png" alt="" />
+      <img class="elImg animate__animated animate__fadeIn a2" src="@/assets/picture/25/10.png" alt="" />
 
     </template>
   </div>
 </template>
 <script setup>
-import p1 from '@/assets/picture/25/1.png'
-import p2 from '@/assets/picture/25/2.png'
-import p3 from '@/assets/picture/25/3.png'
-import p4 from '@/assets/picture/25/4.png'
-import p5 from '@/assets/picture/25/5.png'
-import p6 from '@/assets/picture/25/6.png'
-import p7 from '@/assets/picture/25/7.png'
-import p8 from '@/assets/picture/25/8.png'
-import p9 from '@/assets/picture/25/9.png'
-import p10 from '@/assets/picture/25/10.png'
 const props = defineProps({
   show:false
 })

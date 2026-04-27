@@ -1,23 +1,17 @@
 <template>
   <div class="imgbox">
-    <el-image fit="fill" class="elImg" :src="p1" alt="" />
-      <el-image fit="fill" class="elImg" :src="p6" alt="" />
+    <img class="elImg" src="@/assets/picture/30/1.jpg" alt="" />
+      <img class="elImg" src="@/assets/picture/30/6.png" alt="" />
     <template v-if="props.show">
-      <el-image fit="fill" class="elImg fadeInUp a1" :src="p2" alt="" />
-      <el-image fit="fill" class="elImg fadeInUp a1" :src="p3" alt="" />
-      <el-image fit="fill" class="elImg animate__animated animate__fadeInLeft a2" :src="p4" alt="" />
-      <el-image fit="fill" class="elImg animate__animated animate__fadeIn a3" :src="p5" alt="" />
+      <img class="elImg fadeInUp a1" src="@/assets/picture/30/2.png" alt="" />
+      <img class="elImg fadeInUp a1" src="@/assets/picture/30/3.png" alt="" />
+      <img class="elImg animate__animated animate__fadeInLeft a2" src="@/assets/picture/30/4.png" alt="" />
+      <img class="elImg animate__animated animate__fadeIn a3" src="@/assets/picture/30/5.png" alt="" />
 
     </template>
   </div>
 </template>
 <script setup>
-import p1 from '@/assets/picture/30/1.png'
-import p2 from '@/assets/picture/30/2.png'
-import p3 from '@/assets/picture/30/3.png'
-import p4 from '@/assets/picture/30/4.png'
-import p5 from '@/assets/picture/30/5.png'
-import p6 from '@/assets/picture/30/6.png'
 const props = defineProps({
   show:false
 })

@@ -1,28 +1,19 @@
 <template>
   <div class="imgbox">
-    <el-image fit="fill" class="elImg" :src="p1" alt="" />
+    <img class="elImg" src="@/assets/picture/4/1.jpg" alt="" />
     <template v-if="props.show">
-      <el-image fit="fill" class="elImg fadeInUp a1 " :src="p7" alt="" />
-      <el-image fit="fill" class="elImg fadeInUp a1 " :src="p6" alt="" />
-      <el-image fit="fill" class="elImg animate__animated animate__fadeInRight a2 " :src="p5" alt="" />
-      <el-image fit="fill" class="elImg animate__animated animate__fadeInRight a2 " :src="p9" alt="" />
-      <el-image fit="fill" class="elImg animate__animated animate__fadeInRight a2 " :src="p8" alt="" />
-      <el-image fit="fill" class="elImg fadeInUp a3" :src="p4" alt="" />
-      <el-image fit="fill" class="elImg fadeInUp a3" :src="p3" alt="" />
-      <el-image fit="fill" class="elImg fadeInUp a4" :src="p2" alt="" />
+      <img class="elImg fadeInUp a1 " src="@/assets/picture/4/7.png" alt="" />
+      <img class="elImg fadeInUp a1 " src="@/assets/picture/4/6.png" alt="" />
+      <img class="elImg animate__animated animate__fadeInRight a2 " src="@/assets/picture/4/5.png" alt="" />
+      <img class="elImg animate__animated animate__fadeInRight a2 " src="@/assets/picture/4/9.png" alt="" />
+      <img class="elImg animate__animated animate__fadeInRight a2 " src="@/assets/picture/4/8.png" alt="" />
+      <img class="elImg fadeInUp a3" src="@/assets/picture/4/4.png" alt="" />
+      <img class="elImg fadeInUp a3" src="@/assets/picture/4/3.png" alt="" />
+      <img class="elImg fadeInUp a4" src="@/assets/picture/4/2.png" alt="" />
     </template>
   </div>
 </template>
 <script setup>
-import p1 from '@/assets/picture/4/1.png'
-import p2 from '@/assets/picture/4/2.png'
-import p3 from '@/assets/picture/4/3.png'
-import p4 from '@/assets/picture/4/4.png'
-import p5 from '@/assets/picture/4/5.png'
-import p6 from '@/assets/picture/4/6.png'
-import p7 from '@/assets/picture/4/7.png'
-import p8 from '@/assets/picture/4/8.png'
-import p9 from '@/assets/picture/4/9.png'
 const props = defineProps({
   show:false
 })
