@@ -2,6 +2,10 @@ html,body,div,p,span{
   padding: 0;
   margin: 0;
 }
+body {
+  padding-bottom: constant(safe-area-inset-bottom); /* iOS 11.0+ */
+  padding-bottom: env(safe-area-inset-bottom); /* iOS 11.2+ */
+}
 .elImg{
   position: absolute !important;
   height: 100%;

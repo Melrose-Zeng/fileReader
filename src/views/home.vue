@@ -1,5 +1,5 @@
 <template>
-  <div class="swiper-box">
+  <div class="swiper-box" :style="{height:height}">
     <!-- Swiper 组件：直接使用，无需任何导入 -->
     <swiper :lazy="true" style="width: 100%; height: 100%" :modules="[EffectCreative, Lazy]" :speed="600"
       direction="vertical" @activeIndexChange="sliderChange" @slideChangeTransitionEnd="slideChangeTransitionEnd"
@@ -22,6 +22,7 @@ import "swiper/css/scrollbar";
 import "swiper/css/navigation";
 import "swiper/css/a11y";
 const activeValue = ref(0)
+const height = ref('')
 const showList = ref({
   0: true,
   1: true,
@@ -73,12 +74,13 @@ const slideChangeTransitionEnd = (val) => {
   activeValue.value = val.activeIndex
 }
 const init = () => {
+  console.log(`output->window.innerHeight`,window.innerHeight)
+  height.value = `${window.innerHeight}px`  
 }
 </script>
 
 <style scoped>
 .swiper-box {
   width: 100vw;
-  height: 100vh;
 }
 </style>

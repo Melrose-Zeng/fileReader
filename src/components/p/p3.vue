@@ -1,11 +1,11 @@
 <template>
   <div class="imgbox">
     <img class="elImg" src="@/assets/picture/3/1.jpg" alt="" />
+    <img class="elImg" src="@/assets/picture/3/5.png" alt="" />
     <template v-if="props.show">
       <img class="elImg fadeInUp a3" src="@/assets/picture/3/2.png" alt="" />
       <img class="elImg fadeInUp a1" src="@/assets/picture/3/3.png" alt="" />
       <img class="elImg animate__animated animate__fadeInRight a2  d2" src="@/assets/picture/3/4.png" alt="" />
-      <img class="elImg animate__animated animate__fadeInRight a4  d2" src="@/assets/picture/3/5.png" alt="" />
     </template>
   </div>
 </template>
