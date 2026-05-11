@@ -1,5 +1,8 @@
 <template>
-  <div class="swiper-box" :style="{height:height}">
+  <div class="swiper-box" @mousedown="playMusic" @click="playMusic" :style="{ height: height }">
+    <audio id="bgm" ref="audioRef" autoplay loop>
+      <source src="@/assets/music.mp3" type="audio/mpeg">
+    </audio>
     <!-- Swiper 组件：直接使用，无需任何导入 -->
     <swiper :lazy="true" style="width: 100%; height: 100%" :modules="[EffectCreative, Lazy]" :speed="600"
       direction="vertical" @activeIndexChange="sliderChange" @slideChangeTransitionEnd="slideChangeTransitionEnd"
@@ -16,12 +19,13 @@ import { defineAsyncComponent } from 'vue';
 import { Pagination, EffectCreative, Navigation, Lazy } from "swiper";
 const imageBox = defineAsyncComponent(() => import('@/components/imageBox.vue'));
 // import imageBox from "@/components/imageBox.vue";
-import { ref } from "vue";
+import { ref, onMounted } from "vue";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/navigation";
 import "swiper/css/a11y";
 const activeValue = ref(0)
+const audioRef = ref(null)
 const height = ref('')
 const showList = ref({
   0: true,
@@ -68,14 +72,24 @@ const sliderChange = (val) => {
   activeValue.value = val.activeIndex
   showList.value[val.activeIndex] = true
   showList.value[val.activeIndex + 1] = true
+  playMusic()
 }
 // 切换结束时
 const slideChangeTransitionEnd = (val) => {
   activeValue.value = val.activeIndex
 }
 const init = () => {
-  console.log(`output->window.innerHeight`,window.innerHeight)
-  height.value = `${window.innerHeight}px`  
+  console.log(`output->window.innerHeight`, window.innerHeight)
+  height.value = `${window.innerHeight}px`
+}
+const playMusic = () => {
+  console.dir( audioRef.value)
+  if (!audioRef.value || !audioRef.value.paused) {
+    return
+  }
+  if (audioRef.value) {
+    audioRef.value.play()
+  }
 }
 </script>
 
